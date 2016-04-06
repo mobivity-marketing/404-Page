@@ -1,0 +1,169 @@
+// Variables and Imports
+
+$greenLight: #A3CF65;
+$green: #8DC63F;
+$greenDark: #709E40;
+
+$blueLight: #78B0B6;
+$blue: #569EA4;
+$blueDark: #467F83;
+
+$purpleLight: #BA94C4;
+$purple: #A87BB5;
+$purpleDark: #88639C;
+
+$redLight: #F5857E;
+$red: #F2665E;
+$redDark: #CE5750;
+
+$orangeLight: #F8A464;
+$orange: #F68D3D;
+$orangeDark: #D17834;
+
+$yellowLight: #FECF64;
+$yellow: #FEB611;
+$yellowDark: #E4A30F;
+
+$greyLight: #E6E7E8;
+$grey: #929497;
+$greyDark: #58595B;
+
+$white: #f4f4f4;
+$black: #58595B;
+
+$gutter: 20px;
+$border-radius: 4px;
+$transition: all 0.35s ease;
+$box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+
+// Global
+
+html {
+	width: 100%;
+	height: 100%;
+	background-color: #f4f4f4;
+  background: url(../images/BG.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+	font-size: 24px;
+}
+
+// Typography
+
+h1, h3, p {
+	margin: 0;
+	padding: 0;
+	margin-bottom: $gutter;
+	font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+	font-weight: 900 !important;
+	color: $green;
+	font-size: 3em;
+}
+
+h3 {
+	font-weight: 900 !important;
+	color: $blue;
+	font-size: 2em;
+	margin-bottom: $gutter*3;
+}
+
+p {
+	font-weight: 300 !important;
+	color: $black;
+	font-size: 1em;
+	margin-bottom: $gutter*3;
+
+	a {
+		font-weight: 700;
+		text-decoration: none;
+		color: $black;
+		transition: $transition;
+		
+		&:hover {
+			color: $green;
+			text-decoration: none;
+		}
+
+	}
+
+}
+
+// Styles Start
+
+.copy {
+	margin: 0px auto;
+	margin-top: 100px;
+	text-align: center;
+}
+
+.buttons {
+
+	text-align: center;
+
+	a {
+		color: $white;
+		font-weight: 700;
+		padding: $gutter/3 $gutter;
+		border-radius: $border-radius;
+		font-size: .8em;
+		transition: $transition;
+		box-shadow: $box-shadow;
+
+		&:hover {
+			text-decoration: none;
+		}
+		
+		&.back {
+			background-color: $green;
+
+			&:hover {
+				background-color: $greenDark;
+			}
+
+		}
+
+		&.out {
+			background-color: $red;
+
+			&:hover {
+				background-color: $redDark;
+			}
+
+		}
+
+	}
+
+}
+
+.error-image {
+	width: 100%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
